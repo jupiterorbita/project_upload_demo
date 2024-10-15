@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update dog</title>
+</head>
+<body>
+    <a href="/">dashboard</a>
+    <h2>change something from our doggo 🛠️</h2>
+
+    {{this_dog}}
+
+    <form action="/dogs/{{this_dog.id}}/update_action" method="post">
+        <p>name</p>
+        <input name="name" value="{{this_dog.name}}">
+
+        <p>age</p>
+        <input type="number" name="age" value="{{this_dog.age}}">
+
+        <p>breed</p>
+        <input name="breed" value="{{this_dog.breed}}">
+
+        <p>color</p>
+        <input name="color" value="{{this_dog.color}}">
+
+        <p></p>
+        <button>add a pet!</button>
+
+    </form>
+</body>
+</html>
